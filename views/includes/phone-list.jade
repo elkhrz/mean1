@@ -1,0 +1,13 @@
+div.container-fluid
+  div.row
+    div.col-md-2 Search:
+        input(ng-model="query")
+        Sort by:
+        select(ng-model="orderProp")
+          option(value="name") Alphabetical
+          option(value="age") Newest
+    div.col-md-10
+    div
+      ul
+        each phone in data
+          li=phone.name 
