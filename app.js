@@ -4,7 +4,7 @@ var express = require('express'),
     
 var app = express();
 var url = 'mongodb://localhost:27017/test';
-var port = process.env.PORT;
+var port = process.env.PORT ;
 var index = require('./routes/index');
 var angular = require('./routes/angular');
 
@@ -26,4 +26,4 @@ app.use(stylus.middleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(port);
-console.log('Example app listening at %d',port);
+console.log('Example app listening at %s %d rediret to https://angular-express1-elkhrz.c9.io ' ,process.env.IP,port);

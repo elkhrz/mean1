@@ -10,4 +10,6 @@ div.container-fluid
     div
       ul
         each phone in data
-          li=phone.name 
+          li=phone.name
+            img(src="#{phone.images[0]}")
+            p=phone.description
